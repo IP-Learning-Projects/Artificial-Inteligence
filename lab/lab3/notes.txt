@@ -1,0 +1,51 @@
+lucram in python azi cred
+
+problema de logica cu capra lup varza pe 2 maluri si ai o barca si le transporti 
+
+
+
+VCL.py
+
+LS CS VS OM LD CD VD
+1   1  1  S  0  0  0
+
+t= (1,1,1,'S',0,0,0) -> (0,0,0,'D',1,1,1)
+OM = S
+MUT LUP DREAPTA    | LS == CS == 1 and OM == S
+MUT VARZA DREAPTA  | CS == VS == 1 AND OM == D
+MUT CAPRA DREAPTA  | LD == CD == 1 AND OM == S
+		     VD == CD == 1 AND OM == S
+ELSE 
+MUT LUP STANGA
+MUT CAPRA STANGA
+MUT VARZA STANGA
+MUT S
+COMENZILE SUNT IN FORMA DE ARRAY 
+(1,0,1,D,0,1,0)
+(1,0,1,S,0,1,0)
+(1,0,0,D,0,1,1)
+(1,1,0,S,0,0,1)
+(0,1,0,D,1,0,1)
+(0,1,0,S,1,0,1)
+(0,0,0,D,1,1,1)
+
+
+
+
+functie is_valid(state): LS,CS,VS,OM,LD,CD,VD = STATE
+
+IF ..........
+	RETURN
+	AND OR
+RETURN TRUE
+
+
+IF ..........
+	actions(self, state)
+		moveState = (0,state[1],state[2],state[3],state[4],state[5],state[6])
+		if is_valid(moveState)
+			actions.append(newState)
+
+tema se trimite pana duminica inaintea laboratorului
+
+este 50% din punctajul de la lab de python si daca nu facem problema cu capra si varza avem -1p 
